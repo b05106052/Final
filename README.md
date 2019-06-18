@@ -1,4 +1,4 @@
-<strong>網頁簡介：</strong>
+<strong>網頁簡介：</strong><br>
 我寫的網頁是一個可以用來小賭的骰子遊戲，有兩個骰子，點數為1~6隨機產生，
 
 投注玩法總共有三種，分別為：
@@ -20,9 +20,9 @@
 
 <strong>使用技術：</strong>
 <ol>
-  <li>利用this去存取使用者選的賭注項目</li>
+ <li>利用this去存取使用者選的賭注項目</li>
  <li> template string
  <li> math random來產生隨機骰子結果（兩個骰子都是隨機產生1~6）</li>
-  <li>function利用ES2015</li>
+ <li>function利用ES2015</li>
  <li> 有達到對html物件的增減需求</li>
-  </ol>
+</ol>
