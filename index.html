@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Dice Game</title>
+    <link href="./index.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div>
+        <div class="dice">
+            <h2>骰子結果</h2>
+            <img src="./assets/img/dice.gif" id="dice1" alt="dice rolling" height="250px" width="250px" class="center">
+            <br>
+            <img src="./assets/img/dice.gif" id="dice2" alt="dice rolling" height="250px" width="250px" class="center">
+        </div>
+
+        <div class="bet">
+            <h2>投注區</h2><button id="restart">重新下注</button>
+            <a href="https://b05106052.github.io/final/inedx.html"> <button>輸不起</button></a>
+            </a>
+            <h3>單雙：</h3>
+            <input class="type1" type="button" value="單 (1.75)">
+            <input class="type1" type="button" value="雙 (1.75)">
+            <hr>
+            <h3>大小：</h3>
+            <input class="type3" type="button" value="大於 7 (1.75)">
+            <input class="type3" type="button" value="小於 7 (1.75)">
+            <input class="type3" type="button" value="等於 7 (4.00)">
+            <hr>
+            <h3>正確點數和：</h3>
+            <input class="type2" type="button" value="2 ( 9.00 )">
+            <input class="type2" type="button" value="3 ( 8.00 )">
+            <input class="type2" type="button" value="4 ( 7.00 )">
+            <input class="type2" type="button" value="5 ( 6.00 )">
+            <input class="type2" type="button" value="6 ( 5.00 )">
+            <input class="type2" type="button" value="7 ( 4.00 )">
+            <input class="type2" type="button" value="8 ( 5.00 )">
+            <input class="type2" type="button" value="9 ( 6.00 )">
+            <input class="type2" type="button" value="10 ( 7.00 )">
+            <input class="type2" type="button" value="11 ( 8.00 )">
+            <input class="type2" type="button" value="12 ( 9.00 )">
+            <hr>
+            <h3>投注金額： <input id="money" class="money" type="number" placeholder="請輸入投注金額" min="100" max="2000" step="100"><input class="confirm" id="confirmBet" type="submit" value="發大財"></h3>
+        </div>
+        <div class="result">
+            <h2>結果</h2><br>
+            <h3 id="oddEven">單雙：</h3>
+            <h3 id="bigSmall">大小：</h3>
+            <h3 id="sum">正確點數和：</h3>
+            <hr>
+            <h3 id="initialBet">投注金額：</h3>
+            <h3 id="betAmount">此次結果：</h3>
+            <h3 id="leftMoney">剩餘金額：2000</h3>
+        </div>
+    </div>
+    <script src="dice.js"></script>
+</body>
+
+</html>
